@@ -1,1 +1,88 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: rgb(19, 171, 112);
+}
+.cardInputs {
+  margin-left: 10px;
+}
+button {
+  border-radius: 10px;
+}
+button:hover {
+  background: red;
+  color: yellow;
+}
+#temporal {
+  margin-top: 5px;
+  border: 1px dotted black;
+}
+.randomCards {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bubbleSortLogDiv {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card {
+  background: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30px;
+  width: 80px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  font-size: 25px;
+}
+.sortedCard {
+  background: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30px;
+  width: 80px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  font-size: 25px;
+}
+.card::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.card::after {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+.card.spade::before,
+.card.spade::after {
+  content: "\2660";
+  color: black;
+}
+.card.club::before,
+.card.club::after {
+  content: "\2663";
+  color: black;
+}
+.card.heart::before,
+.card.heart::after {
+  content: "\2665";
+  color: red;
+}
+.card.diamond::before,
+.card.diamond::after {
+  content: "\2666";
+  color: red;
+}
+.sortCard {
+  display: flex;
+}
